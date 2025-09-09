@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body>
+<body class="inter">
     <img src="./img/logo.png" alt="logo" class="md:pl-16 pt-2">
     <!-- Nav -->
       <div class="flex inter p-4 justify-between bg-[#0066FF] md:px-14 md:py-4 text-sm  md:text-lg text-white relative">
@@ -60,7 +60,7 @@
         <a>About us</a>
         <a>En/বাংলা</a>
     </div>
-    
+
      <!-- form -->
     <section class="flex justify-center items-center py-10">
         <div class="flex flex-col justify-center items-center drop-shadow-lg p-6 rounded-xl md:w-2/3 shadow-lg">
@@ -91,13 +91,23 @@
                     </div>
                     <div>
                         <p class="pl-2">Select Your District<span class="text-[#0066FF]">*</span></p>
-                        <input type="text" class="border-2 border-black rounded-lg p-2 w-full"
-                            placeholder="Select Your District">
+                        
+                          <select class="border-2 border-black rounded-lg p-2 w-full">
+                            <option>Select Your District</option>
+                            <option>Dhaka</option>
+                            <option>Rajshahi</option>
+                            <option>Cumilla</option>
+                        </select>
                     </div>
                     <div>
                         <p class="pl-2">Select Your Police Station<span class="text-[#0066FF]">*</span></p>
-                        <input type="text" class="border-2 border-black rounded-lg p-2 w-full"
-                            placeholder="Select Your Police Station">
+                      
+                         <select class="border-2 border-black rounded-lg p-2 w-full">
+                            <option>Select Your Police Station</option>
+                            <option>Dhaka</option>
+                            <option>Rajshahi</option>
+                            <option>Cumilla</option>
+                        </select>
                     </div>
                 </div>
 
@@ -116,19 +126,28 @@
                     </div>
                     <div>
                         <p class="pl-2">Create New Password</p>
+                        <div class="flex relative items-center">
                         <input type="password" class="border-2 border-black rounded-lg p-2 w-full"
                             placeholder="Create New Password">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                        </svg>
+                        </div>
+
                     </div>
                     <div>
                         <p class="pl-2">Confirm Password</p>
+                        <div class="flex relative items-center">
                         <input type="password" class="border-2 border-black rounded-lg p-2 w-full"
                             placeholder="Confirm Password">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                        </svg>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Submit Button -->
-                <button class="mt-6 bg-[#0066FF] text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
-                    Create Account
+                <button class="mt-6 bg-[#0066FF] w-full text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+                    Create
                 </button>
             </div>
         </div>
