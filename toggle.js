@@ -11,5 +11,11 @@ const subManu = document.getElementById('submenu')
 aboutUsBtn.addEventListener('click', () => {
     subManu.classList.toggle('hidden')
 })
+const aboutUsBtnM = document.getElementById('about-m')
+const subManuM = document.getElementById('submenu-m')
+
+aboutUsBtnM.addEventListener('click', () => {
+    subManuM.classList.toggle('hidden')
+})
 
 
