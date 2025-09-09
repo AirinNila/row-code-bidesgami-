@@ -1,8 +1,14 @@
 const humburger = document.getElementById('humburger')
 const mobileManu = document.getElementById('mobileManu')
+const cross = document.getElementById('cross')
 
 humburger.addEventListener('click', () => {
-    mobileManu.classList.toggle('hidden')
+    mobileManu.classList.remove('hidden')
+})
+
+cross.addEventListener('click', () => {
+    mobileManu.classList.add('hidden')
+ 
 })
 
 const aboutUsBtn = document.getElementById('about')
