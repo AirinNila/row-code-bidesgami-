@@ -1,8 +1,15 @@
-const btn = document.getElementById('toggle-btn')
-const navLink = document.getElementById('navlinks')
+const humburger = document.getElementById('humburger')
+const mobileManu = document.getElementById('mobileManu')
 
-btn.addEventListener('click', () => {
-    navLink.classList.toggle('hidden')
+humburger.addEventListener('click', () => {
+    mobileManu.classList.toggle('hidden')
+})
+
+const aboutUsBtn = document.getElementById('about')
+const subManu = document.getElementById('submenu')
+
+aboutUsBtn.addEventListener('click', () => {
+    subManu.classList.toggle('hidden')
 })
 
 
