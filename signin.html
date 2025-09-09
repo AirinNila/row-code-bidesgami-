@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Create Account</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/logo.png" alt="logo" class="md:pl-16 pt-2">
+    <!-- Nav -->
+      <div class="flex inter p-4 justify-between bg-[#0066FF] md:px-14 md:py-4 text-sm  md:text-lg text-white relative">
+      <div class="md:flex hidden gap-4 md:justify-between">  
+        <a>Home</a>
+        <a>Air-Ticket</a>
+        <a>Work Permit</a>
+        <a>Student</a>
+        <a>Hajj & Umrah</a>
+        <a>Visa Processing</a>
+        <a>Tour Package</a>
+        <a>Hotel Booking</a>
+        <a>About us</a>
+        <a>En/বাংলা</a>
+    </div>
+    <!-- mobile -->
+      
+    <btn id="toggle-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+        </svg>
+    </btn>
+ 
+    
+
+        <a href="/signin.html">Sign In </a>
+     </div>
+       <div id="navlinks" class="hidden md:hidden w-40 ml-6 top-28 text-white absolute bg-[#0066FF] flex flex-col pl-6 space-y-4  py-4">
+        
+        <a>Home</a>
+        <a>Air-Ticket</a>
+        <a>Work Permit</a>
+        <a>Student</a>
+        <a>Hajj & Umrah</a>
+        <a>Visa Processing</a>
+        <a>Tour Package</a>
+        <a>Hotel Booking</a>
+        <a>About us</a>
+        <a>En/বাংলা</a>
+    </div>
+     <!-- form -->
+    <section class="flex justify-center items-center py-10">
+        <div class="flex flex-col justify-center items-center drop-shadow-lg p-6 rounded-xl md:w-2/3 shadow-lg">
+            <h2 class="  font-semibold text-2xl md:text-[40px]">Create A New Account</h2>
+            <p class=" text-sm text-center">Welcome Back Bideshgami! Please Enter Your Login Details</p>
+
+            <div class="mt-6 w-full flex flex-col items-start justify-center">
+                <!-- Basic Information -->
+                <h3 class="md:text-[28px] text-xl text-[#0066FFCC] font-semibold">Basic Information</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 w-full">
+                    <div>
+                        <p class="pl-2">Enter Your Name<span class="text-[#0066FF]">*</span></p>
+                        <input type="text" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Your Full Name">
+                    </div>
+                    <div>
+                        <p class="pl-2">Select Your Gender<span class="text-[#0066FF]">*</span></p>
+                        <select class="border-2 border-black rounded-lg p-2 w-full">
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="pl-2">Date of Birth<span class="text-[#0066FF]">*</span></p>
+                        <input type="date" class="border-2 border-black rounded-lg p-2 w-full">
+                    </div>
+                    <div>
+                        <p class="pl-2">Select Your District<span class="text-[#0066FF]">*</span></p>
+                        <input type="text" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Select Your District">
+                    </div>
+                    <div>
+                        <p class="pl-2">Select Your Police Station<span class="text-[#0066FF]">*</span></p>
+                        <input type="text" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Select Your Police Station">
+                    </div>
+                </div>
+
+                <!-- Login Information -->
+                <h3 class="md:text-[28px] text-xl text-[#0066FFCC] font-semibold mt-6">Login Information</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 w-full">
+                    <div>
+                        <p class="pl-2">Enter Your Phone Number<span class="text-[#0066FF]">*</span></p>
+                        <input type="tel" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Enter Your Phone Number">
+                    </div>
+                    <div>
+                        <p class="pl-2">Enter Your E-mail</p>
+                        <input type="email" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Enter Your E-mail">
+                    </div>
+                    <div>
+                        <p class="pl-2">Create New Password</p>
+                        <input type="password" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Create New Password">
+                    </div>
+                    <div>
+                        <p class="pl-2">Confirm Password</p>
+                        <input type="password" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="mt-6 bg-[#0066FF] text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+                    Create Account
+                </button>
+            </div>
+        </div>
+    </section>
+
+      <footer class="bg-[#0066FF] text-white text-base">
+        <div class="flex flex-col md:flex-row items-start gap-4 md:items-center md:justify-between md:px-16 px-4 py-2 md:py-4">
+            <div class="flex flex-col ">
+                <h3 class="font-semibold text-2xl">Discovr</h3>
+                <a>home</a>
+                <a>Terms & conditions</a>
+                <a>Cereer</a>
+                <a>Refund Policy</a>
+                <a>EMI Policy</a>
+                <a>Privacy POlicy</a>
+            </div>
+            <div class="flex flex-col gap-8 items-center">
+                <h3 class="font-semibold text-2xl">Payment Methods</h3>
+                <img src="./img/payment.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h3 class="font-semibold text-2xl">Need Help ?</h3>
+                    <p>We are Always here for you! <br>Knock us on Messenger anytime <br>or Call our Hotline (10AM - 10PM).</p>
+                </div>
+                <div>
+                       <h3 class="font-semibold text-2xl">Contact</h3>
+                       <p>info@bideshgami.com
++09302202020219</p>
+                </div>
+                
+            </div>
+            <div class="flex flex-col gap-4">
+                <div>
+                     <h3 class="font-semibold text-2xl">Download our app</h3>
+                     <img src="./img/google (1).png" alt="">
+                </div>
+                <div>
+                     <h3 class="font-semibold text-2xl">Follow Us</h3>
+                     <img src="./img/social.png" alt="">
+                </div>
+               
+            </div>
+
+        </div>
+        <hr>
+        <div class="flex justify-between items-center  md:px-16 px-4 py-2 md:py-4">
+            <img src="./img/w-logo.png" alt="">
+            <p> Copyright Bideshgam</p>
+        </div>
+
+     </footer>
+
+    <script src="/toggle.js"></script>
+
+</body>
+
+</html>

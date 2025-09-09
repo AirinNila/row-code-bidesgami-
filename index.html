@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Bideshgami</title>
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
+.poppins {
+     font-family: "Poppins", sans-serif;
+}
+</style>
+     
+</head>
+
+
+
+<body>
+    <img src="./img/logo.png" alt="logo" class="md:pl-16 pt-2">
+    <!-- nav -->
+     <div class="flex inter p-4 justify-between bg-[#0066FF] md:px-14 md:py-4 text-sm  md:text-lg text-white relative">
+      <div class="md:flex hidden gap-4 md:justify-between">  
+        <a>Home</a>
+        <a>Air-Ticket</a>
+        <a>Work Permit</a>
+        <a>Student</a>
+        <a>Hajj & Umrah</a>
+        <a>Visa Processing</a>
+        <a>Tour Package</a>
+        <a>Hotel Booking</a>
+        <a>About us</a>
+        <a>En/বাংলা</a>
+    </div>
+    <!-- mobile -->
+      
+    <btn id="toggle-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+        </svg>
+    </btn>
+ 
+    
+
+        <a href="/signin.html">Sign In </a>
+     </div>
+
+    <div id="navlinks" class="hidden md:hidden w-40 ml-6 top-28 text-white absolute bg-[#0066FF] flex flex-col pl-6 space-y-4  py-4">
+        
+        <a>Home</a>
+        <a>Air-Ticket</a>
+        <a>Work Permit</a>
+        <a>Student</a>
+        <a>Hajj & Umrah</a>
+        <a>Visa Processing</a>
+        <a>Tour Package</a>
+        <a>Hotel Booking</a>
+        <a>About us</a>
+        <a>En/বাংলা</a>
+    </div>
+
+
+
+     <section class="mt-4">
+        <div class="flex flex-col md:gap-4 gap-0 justify-center items-center gap-4">
+            <h2 class=" font-bold text-2xl md:text-6xl">Welcome To <span class="text-[#0066FF]">Bideshgami</span></h2>
+            <p class="font-semibold md:text-3xl text-lg">Sign In to Continue</p>
+           <div class="flex flex-col poppins md:flex-row justify-center items-center mt-4 gap-4">
+             <div class="bg-[#F2F7FF] md:p-8 p-4 rounded-xl shadow-xl flex flex-col justify-center items-center"><img src="./img/travel.png" alt="">
+            <p class="text-2xl font-semibold pt-6">Customer</p></div>
+            <div class="bg-[#F2F7FF] md:p-8 p-4 rounded-xl shadow-xl flex flex-col justify-center items-center"><img src="./img/marchent.png" alt="">
+            <p class="text-2xl font-semibold pt-6">Merchant</p></div>
+            <div class="bg-[#F2F7FF] md:p-8 p-4 rounded-xl shadow-xl flex flex-col justify-center items-center"><img src="./img/agency.png" alt="">
+            <p class="text-2xl font-semibold pt-6">Agency</p></div>
+           </div>
+        </div>
+     </section>
+     <footer class="bg-[#0066FF] text-white text-base">
+        <div class="flex flex-col md:flex-row items-start gap-4 md:items-center md:justify-between md:px-16 px-4 py-2 md:py-4">
+            <div class="flex flex-col ">
+                <h3 class="font-semibold text-2xl">Discovr</h3>
+                <a>home</a>
+                <a>Terms & conditions</a>
+                <a>Cereer</a>
+                <a>Refund Policy</a>
+                <a>EMI Policy</a>
+                <a>Privacy POlicy</a>
+            </div>
+            <div class="flex flex-col gap-8 items-center">
+                <h3 class="font-semibold text-2xl">Payment Methods</h3>
+                <img src="./img/payment.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h3 class="font-semibold text-2xl">Need Help ?</h3>
+                    <p>We are Always here for you! <br>Knock us on Messenger anytime <br>or Call our Hotline (10AM - 10PM).</p>
+                </div>
+                <div>
+                       <h3 class="font-semibold text-2xl">Contact</h3>
+                       <p>info@bideshgami.com
++09302202020219</p>
+                </div>
+                
+            </div>
+            <div class="flex flex-col gap-4">
+                <div>
+                     <h3 class="font-semibold text-2xl">Download our app</h3>
+                     <img src="./img/google (1).png" alt="">
+                </div>
+                <div>
+                     <h3 class="font-semibold text-2xl">Follow Us</h3>
+                     <img src="./img/social.png" alt="">
+                </div>
+               
+            </div>
+
+        </div>
+        <hr>
+        <div class="flex justify-between items-center  md:px-16 px-4 py-2 md:py-4">
+            <img src="./img/w-logo.png" alt="">
+            <p> Copyright Bideshgam</p>
+        </div>
+
+     </footer>
+     <script src="/toggle.js"></script>
+</body>
+</html>
